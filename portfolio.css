@@ -1,0 +1,126 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Header */
+.jumbotron {
+  background: url(green-mountains.jpg) no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  height: 600px;
+  margin-bottom: 0px;
+}
+
+.header .container {
+  margin: 20px 0px 0px 20px;
+}
+
+.nav ul {
+  list-style: none;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.nav li a {
+  color: #fff;
+}
+
+.nav li {
+  display: inline;
+  font-size: 20px;
+  padding: 5px 20px;
+  margin: 0px 5px;
+}
+
+.btn {
+  background-color: rgba(0,0,0,0.8);
+  border-radius: 2px;
+}
+
+.heading {
+  text-align: center;
+  margin-top: 125px;
+}
+
+
+/* Work */
+.work {
+  background-color: #f2f2f2;
+  padding: 20px 0;
+}
+
+h2 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.work img {
+  height: 200px;
+
+}
+
+.work .row {
+  padding-bottom: 20px;
+}
+
+
+/* Buttons */
+.buttons {
+  background-color: #f2f2f2;
+  height: 100px;
+  text-align: center;
+}
+
+.buttons li a {
+  color: #fff;
+}
+
+.buttons .btn{
+  background-color: #rgba(0,0,0,0.8);
+  padding: 10px 25px;
+  border-radius: 2px;
+}
+
+.buttons ul{
+  list-style: none;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.buttons li {
+  display: inline;
+  font-size: 20px;
+  margin: 0px 20px;
+  width: 300px;
+}
+
+
+/* Footer */
+.footer {
+  background-color: rgba(0,0,0,0.8);
+  color: #fff;
+}
+
+.footer h2 {
+  margin-top: 30px;
+}
+
+.footer ul {
+  list-style: none;
+  text-align: center;
+}
+
+.footer img {
+  height: 40px;
+}
+
+.footer li {
+  display: inline;
+  padding: 10px 20px;
+}
+
+.footer p {
+  margin-bottom: 20px;
+}
