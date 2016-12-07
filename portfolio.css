@@ -1,126 +1,198 @@
 html, body {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 
 /* Header */
-.jumbotron {
-  background: url(green-mountains.jpg) no-repeat center center;
-  background-size: cover;
-  color: #fff;
-  height: 600px;
-  margin-bottom: 0px;
+
+.header {
+    display: flex;
+    background: url(green-mountains.jpg) no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    height: 600px;
+    margin-bottom: 0px;
+    flex-direction: column;
 }
 
 .header .container {
-  margin: 20px 0px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    max-width: 1024px;
+    width: 95%;
 }
 
-.nav ul {
-  list-style: none;
-  margin-top: 20px;
-  margin-bottom: 10px;
+.menu {
+    display: flex;
+    justify-content: center;
 }
 
-.nav li a {
-  color: #fff;
+.menu ul {
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 0px;
 }
 
-.nav li {
-  display: inline;
-  font-size: 20px;
-  padding: 5px 20px;
-  margin: 0px 5px;
+.menu li a {
+    color: #fff;
 }
 
-.btn {
-  background-color: rgba(0,0,0,0.8);
-  border-radius: 2px;
+.menu li {
+    display: inline;
+    font-size: 20px;
+    padding: 5px 20px;
+    margin: 0px 5px;
+}
+
+.button {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 2px;
 }
 
 .heading {
-  text-align: center;
-  margin-top: 125px;
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 10px;
+    margin-bottom: 100px;
+}
+
+.heading h1, .heading h3 {
+    text-align: center;
 }
 
 
 /* Work */
+
 .work {
-  background-color: #f2f2f2;
-  padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    background-color: #f2f2f2;
+    padding: 10px 0;
+    margin-bottom: 0px;
 }
 
 h2 {
-  text-align: center;
-  padding-bottom: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.work ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+    padding: 0px;
+    text-align: center;
+}
+
+.work li {
+    padding: 10px 0px;
+}
+
+.work h2 {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.8);
 }
 
 .work img {
-  height: 200px;
-
-}
-
-.work .row {
-  padding-bottom: 20px;
+    height: 200px;
+    width: 360px;
 }
 
 
 /* Buttons */
+
 .buttons {
-  background-color: #f2f2f2;
-  height: 100px;
-  text-align: center;
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 0 0 10px 0;
+    margin-top: 0px;
 }
 
 .buttons li a {
-  color: #fff;
+    color: #fff;
 }
 
-.buttons .btn{
-  background-color: #rgba(0,0,0,0.8);
-  padding: 10px 25px;
-  border-radius: 2px;
+.buttons .button {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 25px;
+    border-radius: 2px;
 }
 
-.buttons ul{
-  list-style: none;
-  margin-top: 40px;
-  margin-bottom: 40px;
+.buttons ul {
+    padding: 0;
+    list-style: none;
 }
 
 .buttons li {
-  display: inline;
-  font-size: 20px;
-  margin: 0px 20px;
-  width: 300px;
+    display: inline-block;
+    font-size: 20px;
+    margin: 5px 20px;
+    width: 300px;
 }
 
 
 /* Footer */
+
 .footer {
-  background-color: rgba(0,0,0,0.8);
-  color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
 }
 
 .footer h2 {
-  margin-top: 30px;
+    margin-top: 30px;
 }
 
 .footer ul {
-  list-style: none;
-  text-align: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
 }
 
 .footer img {
-  height: 40px;
+    height: 40px;
 }
 
 .footer li {
-  display: inline;
-  padding: 10px 20px;
+    display: inline;
+    padding: 10px 20px;
 }
 
 .footer p {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: center;
+    @media (min-width: 992px) {
+        align-items: flex-end;
+    }
+}
+
+@media (min-width: 992px) {
+    .menu {
+        justify-content: flex-end;
+        display: inline-flex;
+    }
+    .logo {
+        display: inline-flex;
+        justify-content: flex-start;
+    }
+    .work ul {
+        flex-direction: row;
+    }
+    .work li {
+        display: inline-flex;
+        padding: 10px 10px;
+    }
 }
